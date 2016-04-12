@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Lenny's Scripts</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
+		<style>
+			#statscontainer {
+				top: 25%;
+				width: 50%;
+				min-width: 20em;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="statscontainer" class="ui middle aligned centered card grid" style="text-align: center;">
+			<h1 class="ui one column row header">Lenny's Scripts Analytics</h1>
+			<div class="ui divider"></div>
+			<div class="ui centered three column row statistics">
+				<div class="green statistic">
+					<div class="value" id="currentusers">0</div>
+					<div class="label">Currently active users</div>
+				</div>
+				<div class="statistic">
+					<div class="value" id="maxusers">0</div>
+					<div class="label">Concurrent user record</div>
+				</div>
+				<div class="statistic">
+					<div class="value" id="totalusers">0</div>
+					<div class="label">Total users</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+		<script src="jspm_packages/system.js"></script>
+		<script src="config.js"></script>
+		<script>
+			System.import("lib/main.js")
+		</script>
+	</body>
+</html>
